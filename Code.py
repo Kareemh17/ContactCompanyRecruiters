@@ -22,14 +22,14 @@ def login(driver):
 
     username.send_keys(Keys.CONTROL + "a")
     username.send_keys(Keys.DELETE)
-    username.send_keys('Kareemh17@gmail.com')  # enter username here
+    username.send_keys('Username')  # enter username here
 
     # input password
     password = driver.find_element_by_name('session_password')
 
     password.send_keys(Keys.CONTROL + "a")
     password.send_keys(Keys.DELETE)
-    password.send_keys('K4r33m00')  # enter password here
+    password.send_keys('Password')  # enter password here
 
     # login to linkedin account
     submit = driver.find_element_by_id('login-submit')
@@ -39,12 +39,7 @@ def login(driver):
 
 def search(driver):
     # Enter your message here
-    Message = "Dear {0},\n my name is Kareem Hirani and I am currently a freshman at Texas A&M University, College Station " \
-              "intending to major in Computer Science. " \
-              "I am currently search for an internship for the summer of 2019 and would like to ask if your company " \
-              "is offering any internship positions in computer science or software engineering. \n" \
-              "Thank you, \n " \
-              "Kareem Hirani"
+    Message = ""
     # enter into search bar
     file = open('Companies.txt', 'r', encoding='utf-8')
 
